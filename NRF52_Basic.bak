@@ -365,13 +365,13 @@ Wire Wire Line
 Wire Wire Line
 	6100 5400 6050 5400
 Wire Wire Line
-	6850 5400 6900 5400
+	7000 5500 7050 5500
 Wire Wire Line
-	6850 5500 6900 5500
+	7000 5600 7050 5600
 Wire Wire Line
-	6850 5600 6900 5600
+	7000 5700 7050 5700
 Wire Wire Line
-	6850 5700 6900 5700
+	7000 5800 7050 5800
 Wire Notes Line
 	1250 5900 5250 5900
 Wire Notes Line
@@ -416,14 +416,14 @@ Text Notes 8450 3450 0    50   ~ 0
 Radio
 Text Notes 5800 5100 0    50   ~ 0
 Headers\n
-Text GLabel 6900 5700 2    50   BiDi ~ 0
+Text GLabel 7050 5300 2    50   BiDi ~ 0
 VSS
-Text GLabel 6100 5700 2    50   BiDi ~ 0
+Text GLabel 6100 5900 2    50   BiDi ~ 0
 VDD
 Wire Wire Line
 	6100 5300 6050 5300
 Wire Wire Line
-	6900 5300 6850 5300
+	7050 5400 7000 5400
 Wire Notes Line
 	5800 3450 7900 3450
 Text GLabel 2950 5450 3    50   BiDi ~ 0
@@ -467,11 +467,7 @@ Text GLabel 6100 5500 2    50   BiDi ~ 0
 RESET_0.21
 Text GLabel 3850 4050 2    50   Input ~ 0
 SWO
-Text GLabel 7400 5550 2    50   Input ~ 0
-0.07_CTS
-Text GLabel 7400 5650 2    50   Input ~ 0
-0.08_RX
-Text GLabel 7400 5350 2    50   Input ~ 0
+Text GLabel 7050 5500 2    50   Input ~ 0
 0.05_RTS
 Text GLabel 3850 4950 2    50   Input ~ 0
 0.28
@@ -479,19 +475,19 @@ Text GLabel 3850 5050 2    50   Input ~ 0
 0.29
 Text GLabel 3850 5150 2    50   Input ~ 0
 0.30
-Text GLabel 6900 5400 2    50   Input ~ 0
+Text GLabel 7050 5800 2    50   Input ~ 0
 0.28
-Text GLabel 6900 5500 2    50   Input ~ 0
+Text GLabel 7050 5700 2    50   Input ~ 0
 0.29
-Text GLabel 6900 5600 2    50   Input ~ 0
+Text GLabel 7050 5600 2    50   Input ~ 0
 0.30
-Text GLabel 7400 5450 2    50   Input ~ 0
+Text GLabel 7050 5400 2    50   Input ~ 0
 0.06_TX
 Text GLabel 6100 5600 2    50   Input ~ 0
 SWO
 Text GLabel 3850 4850 2    50   Input ~ 0
 0.27
-Text GLabel 6900 5300 2    50   Input ~ 0
+Text GLabel 7050 5900 2    50   Input ~ 0
 0.27
 NoConn ~ 3850 3150
 NoConn ~ 3850 3250
@@ -543,30 +539,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 3950 10150 3950
 Wire Wire Line
-	9050 2700 9550 2700
-Wire Wire Line
 	10400 2700 10400 2900
-Wire Wire Line
-	9050 3050 9550 3050
-$Comp
-L Device:Crystal Y1
-U 1 1 6043DEA4
-P 9550 2850
-F 0 "Y1" V 9504 2981 50  0000 L CNN
-F 1 "Crystal" V 9595 2981 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 9550 2850 50  0001 C CNN
-F 3 "~" H 9550 2850 50  0001 C CNN
-	1    9550 2850
-	0    1    1    0   
-$EndComp
-Connection ~ 9550 2700
-Wire Wire Line
-	9550 3000 9550 3050
-Connection ~ 9550 3050
-Wire Wire Line
-	9550 2700 9950 2700
-Wire Wire Line
-	9550 3050 9950 3050
 Text GLabel 3850 2950 2    50   Input ~ 0
 0.07_CTS
 Text GLabel 3850 3050 2    50   Input ~ 0
@@ -584,45 +557,12 @@ Wire Notes Line
 Wire Notes Line
 	5250 5900 5250 1750
 $Comp
-L Connector:Conn_01x05_Male J2
-U 1 1 602A1200
-P 6650 5500
-F 0 "J2" H 7000 5800 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6950 5200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 6650 5500 50  0001 C CNN
-F 3 "~" H 6650 5500 50  0001 C CNN
-	1    6650 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 602A279D
-P 7200 5450
-F 0 "J3" H 7450 5650 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 7550 5150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 7200 5450 50  0001 C CNN
-F 3 "~" H 7200 5450 50  0001 C CNN
-	1    7200 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J1
-U 1 1 602A8D09
-P 5850 5500
-F 0 "J1" H 6200 5800 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6150 5200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5850 5500 50  0001 C CNN
-F 3 "~" H 5850 5500 50  0001 C CNN
-	1    5850 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_Coaxial J4
 U 1 1 602E44FD
 P 10500 3900
 F 0 "J4" H 10600 3875 50  0000 L CNN
 F 1 "Conn_Coaxial" H 10400 4100 50  0000 L CNN
-F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 10500 3900 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount" H 10500 3900 50  0001 C CNN
 F 3 " ~" H 10500 3900 50  0001 C CNN
 	1    10500 3900
 	1    0    0    -1  
@@ -640,4 +580,75 @@ F 3 "" H 10500 4100 50  0001 C CNN
 $EndComp
 NoConn ~ 3850 5250
 NoConn ~ 3850 2650
+Text GLabel 6100 5800 2    50   Input ~ 0
+0.07_CTS
+Text GLabel 6100 5700 2    50   Input ~ 0
+0.08_RX
+$Comp
+L Connector:Conn_01x07_Male J2
+U 1 1 602D748A
+P 6800 5600
+F 0 "J2" H 7150 6000 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 7050 5150 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 6800 5600 50  0001 C CNN
+F 3 "~" H 6800 5600 50  0001 C CNN
+	1    6800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 602D8565
+P 5850 5600
+F 0 "J1" H 6250 6000 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 6200 5150 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 5850 5600 50  0001 C CNN
+F 3 "~" H 5850 5600 50  0001 C CNN
+	1    5850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5800 6100 5800
+Wire Wire Line
+	6050 5900 6100 5900
+Wire Wire Line
+	7000 5900 7050 5900
+Wire Wire Line
+	7000 5300 7050 5300
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 602F2598
+P 9500 2900
+F 0 "Y?" V 9200 2850 50  0000 L CNN
+F 1 "Crystal_GND24" V 9800 2700 50  0000 L CNN
+F 2 "" H 9500 2900 50  0001 C CNN
+F 3 "~" H 9500 2900 50  0001 C CNN
+	1    9500 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 2700 9500 2700
+Wire Wire Line
+	9500 2750 9500 2700
+Connection ~ 9500 2700
+Wire Wire Line
+	9500 2700 9950 2700
+Wire Wire Line
+	9050 3050 9500 3050
+Connection ~ 9500 3050
+Wire Wire Line
+	9500 3050 9950 3050
+Wire Wire Line
+	9300 2900 9300 2500
+Wire Wire Line
+	9300 2500 9800 2500
+Wire Wire Line
+	10400 2500 10400 2700
+Connection ~ 10400 2700
+Wire Wire Line
+	9700 2900 9800 2900
+Wire Wire Line
+	9800 2900 9800 2500
+Connection ~ 9800 2500
+Wire Wire Line
+	9800 2500 10400 2500
 $EndSCHEMATC
